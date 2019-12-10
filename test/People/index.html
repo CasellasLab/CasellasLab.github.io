@@ -61,7 +61,8 @@
 		.overlay-image {
 			position: relative;
 			width:300px;
-			height: 500px;
+			height: 400px;
+			marggin-right:10px;
 		}
 		.overlay-image .image {
 			display: block;	
@@ -80,6 +81,17 @@
 			transform: translate(-50%,-50%);
 			width: 100%;
 		}
+		.overlay-image .hover {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+		}
+		.overlay-image:hover .hover{
+			opacity: 1;
+		}
 		.overlay-image .normal {
 			transition: .5s ease;
 		}
@@ -89,12 +101,11 @@
 		.overlay-image .hover {
 			background-color: rgba(0,0,0,0.5);
 		}
-
+		#image-row {
+			display:flex;
+			flex-direction:row;
+		}
 	</style>
-	#image-row {
-		display:flex;
-		flex-direction:row;
-	}
 <!-- Enable below scripts for it to work in IE8 (but this breaks it in mobile devices) -->
 <!--[if lt IE 9]>
       <script src="/assets/js/html5shiv.js"></script>
