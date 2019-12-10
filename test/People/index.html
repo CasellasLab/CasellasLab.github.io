@@ -61,9 +61,10 @@
 		.overlay-image {
 			position: relative;
 			width:300px;
+			height: 500px;
 		}
 		.overlay-image .image {
-	<!--		display: block;	-->
+			display: block;	
 			width: 300px;
 			height: 500px;
 		}
@@ -79,24 +80,15 @@
 			transform: translate(-50%,-50%);
 			width: 100%;
 		}
-		.overlay-image .hover {
-			position: absolute;
-			top: 50%;
-			height: 100%;
-			width: 100%;
-			opacity: 0;
-			transition: .5s ease;
-		}
-		.overlay-image:hover .hover {
-			opacity: 1;
-		}
 		.overlay-image .normal {
 			transition: .5s ease;
 		}
 		.overlay-image:hover .normal {
 			opacity: 0;
 		}
-
+		.overlay-image .hover {
+			background-color: rgba(0,0,0,0.5);
+		}
 
 	</style>
 <!-- Enable below scripts for it to work in IE8 (but this breaks it in mobile devices) -->
@@ -144,7 +136,7 @@
 	<div class="normal">
 	</div>
 	<div class="hover">
-		<div class="text">Rafael Casellas, PH.D.<br>
+		<div class="text">Rafael Casellas, PH.D.
 			NIAMS</div>
 	</div>	
 </a></div>
