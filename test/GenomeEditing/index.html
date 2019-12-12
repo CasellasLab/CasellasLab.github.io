@@ -31,7 +31,12 @@
 	.carousel-inner {
 		margin-bottom:50px;
 	}
-}
+	#image-row {
+		justify-content: space-between;
+		display:flex;
+		flex-direction:row;
+	}
+
 	</style> 
 <!-- Enable below scripts for it to work in IE8 (but this breaks it in mobile devices so need conditional statement) -->
 <!--[if lt IE 9]>
@@ -67,17 +72,13 @@
 
 	<div class="container" style="background-color:white;font-family:'Adobe Garamond Pro';font-size:18px;">
 <br><br>
-
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
+<div id="image-row">
      <div class="thumbnail">
 	<a href="insitu_HiC_protocol.docx" target="_blank">
-            <img width=800 src="Hi-C.jpeg" class="img-responsive" alt="Rafael Casellas NIAMS HiC">
+            <img src="Hi-C.jpeg" class="img-responsive" alt="Rafael Casellas NIAMS HiC">
 	</a>
     </div>
-</div>
-<br>
 
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
      <div class="thumbnail">
 	<a href="ChromatinRNA.docx" target="_blank">
             <img src="ChromRNA-Seq.jpg" class="img-responsive" alt="Rafael Casellas NIAMS ChromRNA-Seq">
@@ -85,44 +86,32 @@
     </div>
 </div>
 <br>
-
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
+<div id="image-row">
      <div class="thumbnail">
 	<a href="CRISPR_Design_Protocol.pdf" target="_blank">
             <img src="CRISPR.jpg" width=1000px class="img-responsive" alt="Rafael Casellas NIAMS CRISPR">
 	</a>
     </div>
-</div>
-<br>
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
      <div class="thumbnail">
 	<a href="http://crispr.ybzhao.com" target="_blank">
             <img src="Design_tool.jpg" class="img-responsive" alt="Rafael Casellas NIAMS CRISPR design tool">
 	</a>
     </div>
 </div>
-
 <br>
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
+
+<div id="image-row">
      <div class="thumbnail">
 	<a href="4C.doc" target="_blank">
             <img src="4C-Seq.jpg" class="img-responsive" alt="Rafael Casellas NIAMS 4C-Seq">
 	</a>
     </div>
-</div>
-<br>
-
-<div class="row" style="padding-left:40px;padding-right:20px;"> 
      <div class="thumbnail">
 	<a href="ChIP-Seq_protocol.doc" target="_blank">
             <img src="ChIP-Seq.jpg" class="img-responsive" alt="Rafael Casellas NIAMS ChIP-Seq">
 	</a>
     </div>
 </div>
-<br>
-
-
-
 
 </div> <!-- container -->  
 
