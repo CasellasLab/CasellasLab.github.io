@@ -31,7 +31,12 @@
 	.carousel-inner {
 		margin-bottom:50px;
 	}
-}
+	#image-row {
+		justify-content: space-between;
+		display:flex;
+		flex-direction:row;
+	}
+
 	</style> 
 <!-- Enable below scripts for it to work in IE8 (but this breaks it in mobile devices so need conditional statement) -->
 <!--[if lt IE 9]>
@@ -40,8 +45,8 @@
 <![endif]--> 
 
  </head>
-<!--  <body style="background-color: rgb(108,123,139);">  -->
-	  <body style="background-color: rgb(255,255,255);">
+<!--  <body style="background-color: rgb(108,123,139);"> -->
+	<body style="background-color: rgb(255,255,255);">
   <div class="container"> <!-- top container -->
 	<!-- Navigation Bar and header
 	===================================================  -->
@@ -51,11 +56,10 @@
           <li><a href="/test/Overview/index.html" data-toggle="tooltip">Overview</a></li>
           <li><a href="/test/People/index.html">People</a></li>
           <li><a href="/test/Publications/index.html">Publications</a></li>
-          <li class="active"><a href="/test/Art/index.html">Art</a></li>
+          <li class="active" ><a href="/test/Art/index.html">Art</a></li>
 	  <li style="white-space: nowrap"><a href="/test/GenomeEditing/index.html">Protocols</a></li> 
 	  <li><a href="/test/Join/index.html">Join</a></li>
         </ul>
-  </div> <!-- /masthead -->
 <!-- climate change  code start -->
 <!--
 <div id="rel_div" style="width:200px; z-index:100px; position:fixed; top:100px; right:50px; float:right; overflow: auto; ">
@@ -64,55 +68,75 @@
 -->
 <!-- climate change  code end -->
 
-	<!-- Slideshow
-	===================================================  -->
-<div class="container" style="background-color:rgb(0,0,0);">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators" style="text-align:left;">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-	<li data-target="#myCarousel" data-slide-to="3"></li>
-	<li data-target="#myCarousel" data-slide-to="4"></li>
-	<li data-target="#myCarousel" data-slide-to="5"></li>
+<!--      </div>  -->
 
-      </ol>
+	<div class="container" style="background-color:white;font-family:'Adobe Garamond Pro';font-size:18px;">
+<br><br>
+<div id="image-row">
+     <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/31402173" target="_blank">
+            <img src="/test/images/slideimages/2019.jpg" class="img-responsive" alt="Mediator project">
+	</a>
+    </div>
 
-      <div class="carousel-inner">
-	<div class="item active">
-		<img src="/test/images/slideimages/2019.jpg" alt="Mediator project" >
-	</div>
+     <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/29706548" target="_blank">
+            <img src="/test/images/slideimages/2018.jpg" class="img-responsive" alt="Extrusion project">
+	</a>
+    </div>
 
-	<div class="item">
-		<img src="/test/images/slideimages/2018.jpg" alt="Extrusion project" >
-	</div>
+    <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/28803781" target="_blank">
+            <img src="/test/images/slideimages/2017.jpg" class="img-responsive" alt="RegulomeII project">
+	</a>
+    </div>
+</div>
+<br>
+<div id="image-row">
+     <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/25483777" target="_blank">
+            <img src="/test/images/slideimages/2014.jpg" class="img-responsive" alt="AID project">
+	</a>
+    </div>
 
-	<div class="item">
-	  <img src="/test/images/slideimages/2017.jpg" alt="Regulome2 project">
-	</div>
+    <div class="thumbnail">
+	<a href="https://www.ncbi.nlm.nih.gov/pubmed/25131989" target="_blank">
+            <img src="Cell_2014-01.jpg" class="img-responsive" alt="HIV project">
+	</a>
+    </div>
 
-	<div class="item">
-	  <img src="/test/images/slideimages/2014.jpg" alt="AID project">
-	</div>
-	
-	<div class="item">
-		<img src="/test/images/slideimages/2013_02.jpg" alt="Regulome project" >
-	</div>
+     <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/24360274" target="_blank">
+            <img src="/test/images/slideimages/2013_02.jpg" class="img-responsive" alt="Regulome project">
+	</a>
+    </div>
 
-        <div class="item">
-          <img src="/test/images/slideimages/2013.jpg" alt="Promoter melting project">
-        </div>
+    </div>
 
-      </div>
+<br>
+<div id="image-row">
+    <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23706737" target="_blank">
+            <img src="/test/images/slideimages/2013.jpg" class="img-responsive" alt="Promoter melting project">
+	</a>
+    </div>
 
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+     <div class="thumbnail">
+	<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21962510" target="_blank">
+            <img src="Cell_2011-01.jpg" class="img-responsive" alt="Rearrangement project">
+	</a>
+    </div>
 
-<p style="color:white;">If using Internet Explorer, this site displays best in version 10 or above.</p>
+    <div class="thumbnail">
+	<a href="https://www.ncbi.nlm.nih.gov/pubmed/20605486" target="_blank">
+            <img src="Immunity_2010-01.jpg" class="img-responsive" alt="microRNA project">
+	</a>
+    </div>
+</div>
+
+
 </div> <!-- container -->  
-	
+
 
 <!--	<ul class="nav nav-justified" style="max-height:80px;">
 		<li style="background:white;border-right:solid black;"><a href="http://www.nih.gov" style="background:white;border-style:none;"><img src="/images/NIHlogo.jpg" style="height:100%;width:70%;" alt="NIH"/></a></li>
